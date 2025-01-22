@@ -1,0 +1,30 @@
+
+
+ What is javaScript 
+ javaScript is a high-level, dynamic programming language commonly used for creating interactive effects within web browsers.
+
+
+ Web Applications:
+ .React: A library for building user interfaces, maintained by Facebook.
+ .Angular: A full-featured JavaScript framework for building complex web applications.
+
+ 
+ Server-Side:
+ .Node.js: Allows javaScript to run on the server, used for building scalable network applications.
+
+ .Express.js: A minimal and flexible Node.js web application framework.
+ 
+
+ // Runtime environment
+ 1. Provides infrastructure to execute javaScript code.
+
+ // JavaScript vs ECMA
+ . ECMAScript is the standardized specification developed by ECMA international that defines the core features, syntax, and functionalities of javascript similar scripting language.
+ . javaScript is the actual language implementation.
+
+
+ // javaScript vs TypeScript
+ 
+
+
+*** Har second me code chalana hota hai usko hm (setInterval) kahte hai 

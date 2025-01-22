@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      body {
+        background-color: #282c34;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: "Arial", Arial, Helvetica, sans-serif;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      .clock-container {
+        text-align: center;
+        font-size: 48px;
+        border: 2px dotted white;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock-container">
+      <h1 id="clock">00:00:00</h1>
+    </div>
+    <audio src="./12_Project_1_ticking-clock.mp3" preload="auto"></audio>
+
+    <script>
+      setInterval(() => {
+        const element = document.querySelector("#clock");
+
+        const sound = document.querySelector("audio");
+
+        const time = new Date();
+        const option = {
+          timeZone: "Asia/Kolkata",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        };
+        element.textContent = time.toLocaleTimeString("en-US", option);
+        sound.play();
+      }, 1000);
+    </script>
+  </body>
+</html>
