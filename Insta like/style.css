@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: rgb(59, 200, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  height: 400px;
+  width: 350px;
+  background-color: rgb(245, 252, 252);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+#container i {
+  color: #fff;
+  font-size: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  transition: transform ease 0.4s;
+}
